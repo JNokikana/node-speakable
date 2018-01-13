@@ -1,20 +1,9 @@
 {
-    "name": "speakable",
-    "description": "A continuous speech recognition module for node.js.",
+    "name": "voice-recognition",
+    "description": "A voice recognition library for my home AI project. Works by listening to conf defined keyword. Recognition is done locally. Unless you really want to broadcast your whole house to Google. :)",
     "author": {
-      "name": "Sascha Reuter",
-      "email": "sascha@tape.io"
+      "name": "Joonas Nousiainen",
+      "email": "herrapentti@gmail.com"
     },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/sreuter/node-speakable.git"
-    },
-    "contributors": [
-      {
-        "name":"Vittorio Banfi",
-        "email":"vittorio.banfi@gmail.com"
-      }
-    ],
-    "version":"0.4.0",
-    "homepage": "https://github.com/sreuter/node-speakable#readme"
+    "version":"1.0.0"
 }
