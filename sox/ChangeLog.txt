@@ -4,61 +4,6 @@ Change History
 This file contains a list of all changes starting after the release of
 sox-11gamma, followed by a list of prior authors and features.
 
-$ox-14.4.2	2015-02-22
-----------
-
-Previously deprecated features that have been removed in this release:
-
-  Deprec-  Feature    [O(ption)]
-  ated in  [F(ormat)] [E(ffect)]   Replacement
-  -------  ----------------------  ----------------------
-  14.3.0   O -1/-2/-3/-4/-8        -b
-  14.3.0   O -s/-u/-f              -e
-  14.3.0   O -A/-U/-o/-i/-a/-g     -e
-  14.4.0   E swap with parameters  remix
-  14.4.0   E mixer                 remix
-  14.4.1   OpenMP < 3.0            OpenMP >= 3.0
-  14.4.1   F ffmpeg                ffmpeg/avconv via pipe
-
-File formats:
-
-  o Add optional support for reading Ogg Opus files. (John Stumpo)
-  o Fix for max size text chunks in aiff files. (cbagwell)
-  o Add reading support for RF64 WAV files. (Dave Lambley)
-  o Work around for libsndfile created RF64 files with invalid
-    sizes. (Dave Lambley)
-  o Detect MS ADPCM WAV files with invalid blocks. (cbagwell)
-  o Detect Sphere files with invalid header sizes. (cbagwell)
-
-Effects:
-
-  o 'Deemph' can now also be used at 48kHz sample rate.  (robs)
-  o 'Rate' now much faster in many cases.  (robs)
-  o Allow sending spectrograms to stdout. (Ulrich Klauer)
-  o Allow use of Dolph window with spectrograms. (robs)
-  o Allow mixing time and sample-count arguments for the delay
-    effect, and for spectrogram -S and -d. (Ulrich Klauer)
-  o Support multi-channel LADSPA plugins. (Eric Wong)
-  o Support infinite repetition with repeat. (Ulrich Klauer)
-  o Improved pink noise frequency response in synth. (robs)
-  o Extended syntax for specifying audio positions to several
-    effects. (Ulrich Klauer)
-  o Fix integer overflow in mcompand. [3590093] (Guido Aulisi)
-  o Add optional latency compenstation for LADSPA plugins. (Eric Wong)
-
-Other new features:
-
-  o New -p option for soxi to display sample precision. (Ulrich Klauer)
-  o New libsox example6: give explicit output attributes. (robs)
-
-Internal improvements:
-
-  o Speed optimization for effects that operate on channels
-    independently. (Ulrich Klauer)
-  o Fix memory leaks. (Ulrich Klauer)
-  o Most internal symbols (lsx_*) are no longer exported. (Ulrich Klauer)
-
-
 sox-14.4.1	2013-02-01
 ----------
 
@@ -214,7 +159,6 @@ Internal improvements:
   o Fix compiler warnings. (Cristian Morales Vega [P. 3072301], Doug Cook)
   o Improve large file support by using 64-bit numbers to count
     samples. (Doug Cook, Thor Andreassen, Ulrich Klauer)
-
 
 sox-14.3.2	2011-02-27
 ----------

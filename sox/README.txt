@@ -72,7 +72,8 @@ The current release handles the following audio file formats:
   o  Amiga MAUD files
   o  AMR-WB & AMR-NB (with optional libamrwb & libamrnb libraries)
   o  MP2/MP3 (with optional libmad, libtwolame and libmp3lame libraries)
-  o  Opus files (read only; with optional Opus libraries)
+  o  MP4, AAC, AC3, WAVPACK, AMR-NB files (with optional ffmpeg library)
+  o  AVI, WMV, Ogg Theora, MPEG video files (with optional ffmpeg library)
 
   o  Ogg Vorbis files (with optional Ogg Vorbis libraries)
   o  FLAC files (with optional libFLAC)
@@ -147,7 +148,7 @@ The audio effects/tools included in this release are as follows:
     o  channels: Auto mix or duplicate to change number of channels
     o  divide+: Divide sample values by those in the 1st channel (W.I.P.)
     o  remix: Produce arbitrarily mixed output channels
-    o  swap: Swap pairs of channels
+    o  swap: Swap stereo channels
 
   o  Pitch/tempo effects
     o  bend: Bend pitch at given times without changing tempo
