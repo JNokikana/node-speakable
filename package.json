@@ -1,9 +1,22 @@
 {
-    "name": "voice-recognition",
-    "description": "A voice recognition library for my home AI project. Works by listening to conf defined keyword. Initial keyword recognition is done locally and the command recognition is done using an external service.",
-    "author": {
-      "name": "Joonas Nousiainen",
-      "email": "herrapentti@gmail.com"
-    },
-    "version":"1.0.0"
+  "name": "voice-recognition",
+  "description": "A voice recognition library for my home AI project. Works by listening to conf defined keyword. Initial keyword recognition is done locally and the command recognition is done using an external service.",
+  "main": "index.js",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Joonas Nousiainen <herrapentti@gmail.com>",
+  "version": "1.0.0",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JNokikana/voice-recognition.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JNokikana/voice-recognition/issues"
+  },
+  "homepage": "https://github.com/JNokikana/voice-recognition#readme"
 }
