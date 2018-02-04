@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/JNokikana/voice-recognition/issues"
   },
-  "homepage": "https://github.com/JNokikana/voice-recognition#readme"
+  "homepage": "https://github.com/JNokikana/voice-recognition#readme",
+  "dependencies": {
+    "deepspeech": "^0.1.1"
+  }
 }
